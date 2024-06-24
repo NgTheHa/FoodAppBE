@@ -52,3 +52,7 @@ func ConnectDatabase() {
 
 	fmt.Println("Database connected and migrated!")
 }
+
+//func GetDB() *gorm.DB {
+//	return DB
+//}

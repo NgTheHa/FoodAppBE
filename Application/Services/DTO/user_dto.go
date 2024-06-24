@@ -18,7 +18,7 @@ type UserResponseDto struct {
 
 type CreateAddressDto struct {
 	UserID        int
-	AddressType   string
+	AddressType   int
 	Province      string
 	District      string
 	Ward          string
@@ -30,7 +30,7 @@ type CreateAddressDto struct {
 type UpdateAddressDto struct {
 	ID            int
 	UserID        int
-	AddressType   string
+	AddressType   int
 	Province      string
 	District      string
 	Ward          string
@@ -47,7 +47,7 @@ type AddressResponseDto struct {
 	StreetAddress string
 	DetailAddress string
 	Notes         string
-	AddressType   string
+	AddressType   int
 	CreatedAt     time.Time
 	CreatedBy     int
 	UpdatedAt     time.Time
@@ -60,7 +60,7 @@ type AddressFilterDto struct {
 	PageSize  int
 }
 
-type PageResultDto struct {
+type UserPageResultDto struct {
 	Items      []AddressResponseDto
 	TotalItems int
 }
